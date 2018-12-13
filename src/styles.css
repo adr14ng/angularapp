@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
+html{
+    height: 100%;
+    background: #343a40;
+
+}
+
+body{
+    background: #343a40;
+    border: 10px solid white;
+    height: 100%;
+    border-radius: 5px;
+}
+
+hr{
+    border-color: white;
+}
+
+.navbar{
+    border-bottom: 10px solid white;
+}
+
+.form-control.ng-touched.ng-invalid{
+    border: 2px solid red;
+}
+
+.text-success{
+    color: green;
+}
+
+.logout:hover{
+    cursor: pointer;
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+}

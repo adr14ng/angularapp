@@ -1,0 +1,13 @@
+<form class="form-signin" #newNoteForm="ngForm" (ngSubmit)="newNote(newNoteForm)"  ngNativeValidate>
+  <div class="container-fluid">
+    <h2 class="form-signin-heading text-light pt-3">New Note</h2>
+    <br/>
+    <label for="notetitle" class="sr-only">Note Title</label>
+    <input type="text" id="notetitle" name="notetitle" ngModel class="form-control" placeholder="Note Title" required autofocus>
+    <br/>
+    <label for="notetext" class="sr-only">Note Text</label>
+    <textarea type="text" id="notetext" name="notetext" ngModel class="form-control" placeholder="Note Text" style="min-height: 60vh" required autofocus></textarea>
+    <br/>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Add New Note</button>
+  </div>
+</form>

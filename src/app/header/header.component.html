@@ -1,0 +1,13 @@
+<!--  HEADER  -->
+<nav class="navbar navbar-dark bg-dark mb-1" style="min-height: 10vh">
+  <a class="navbar-brand text-danger" >MataNote</a>
+  <div class="navbar-expand mr-auto">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" *ngIf="isUserAuthenticated()" routerLink="/courses">Courses</a>
+      <a class="nav-item nav-link" *ngIf="!isUserAuthenticated()" routerLink="/login">Login</a>
+      <a class="nav-item nav-link" *ngIf="isUserAuthenticated()" [routerLink]="" (click)="logOut()">Logout</a>
+      <a class="nav-item nav-link" *ngIf="!isUserAuthenticated()" routerLink="/register">Register</a>
+    </div>
+  </div>
+</nav>
+<!-- END HEADER -->

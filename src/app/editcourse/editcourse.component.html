@@ -1,0 +1,16 @@
+<form class="form-signin" #editCourseForm="ngForm" (ngSubmit)="editCourse(editCourseForm)"  ngNativeValidate>
+  <div class="container-fluid">
+    <h2 class="form-signin-heading text-light pt-3">Update Course</h2>
+    <br/>
+    <label for="coursetitle" class="sr-only">Course Title</label>
+    <input type="text"
+          id="coursetitle" 
+          name="coursetitle" 
+          ngModel class="form-control" 
+          placeholder="Course Title" 
+          [(ngModel)]="course_title"
+          required autofocus>
+    <br/>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Update Course</button>
+  </div>
+</form>

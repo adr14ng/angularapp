@@ -1,0 +1,10 @@
+<form class="form-signin" #newCourseForm="ngForm" (ngSubmit)="newCourse(newCourseForm)"  ngNativeValidate>
+  <div class="container-fluid">
+    <h2 class="form-signin-heading text-light pt-3">New Course</h2>
+    <br/>
+    <label for="coursetitle" class="sr-only">Course Title</label>
+    <input type="text" id="coursetitle" name="coursetitle" ngModel class="form-control" placeholder="Course Title" required autofocus>
+    <br/>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Add New Course</button>
+  </div>
+</form>

@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<table class="table table-striped table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Course</th>
+        <th scope="col" class="text-right pr-5" >
+            <a [routerLink]="" (click)="goToAddCourse()">
+                Add Course
+            </a> 
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let course of courses" >
+        <td scope="row" >
+          <a [routerLink]="" (click)="goToCoursePage(course.courseTitle)">
+              {{course.courseTitle}}
+          </a> 
+        </td>
+        <td class="text-right" >
+            <a class="text-left pr-5" [routerLink]="" (click)="goToEditCourse(course.courseTitle, course.courseID)">
+                Edit
+              </a>
+          <a class="text-right pr-5 text-danger" [routerLink]="" (click)="goToDeleteCourse(course.courseTitle, course.courseID)" >
+            Delete
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
